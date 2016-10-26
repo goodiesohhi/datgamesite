@@ -2,7 +2,7 @@ window.onload = function () { showGame();}
 
 function showGame(whichgame){
 
-  var source=getParameterByName('game');
+  var source="./games/"+getParameterByName('game')+".swf";
   
   var game=document.getElementById("gameHolder");
   var clone=game.cloneNode(true);
