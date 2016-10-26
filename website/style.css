@@ -1,0 +1,26 @@
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0 ; }
+}
+
+body {
+
+	background-image: url(public/background.png);
+	background-position: 0px 0px;
+
+
+	animation: animatedBackground 40s linear infinite;
+ }
+.hidetable {
+
+	
+	border: medium solid #000;
+		background-color:#FFF
+}
+.tablebold {
+	border: medium solid #000;
+	background-color:#FFF
+}
+.float {
+	float: left;
+}
