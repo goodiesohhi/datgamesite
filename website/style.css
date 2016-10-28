@@ -1,15 +1,36 @@
-@keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 100% 0 ; }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 35%}
+    50%{background-position:100% 66%}
+    100%{background-position:0% 35%}
 }
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 35%}
+    50%{background-position:100% 66%}
+    100%{background-position:0% 35%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 35%}
+    50%{background-position:100% 66%}
+    100%{background-position:0% 35%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 35%}
+    50%{background-position:100% 66%}
+    100%{background-position:0% 35%}
+}
+
+
+
 
 body {
 
-	background-image: url(public/background.png);
-	background-position: 0px 0px;
-
-
-	animation: animatedBackground 40s linear infinite;
+-webkit-animation: AnimationName 15s ease infinite;
+-moz-animation: AnimationName 15s ease infinite;
+-o-animation: AnimationName 15s ease infinite;
+animation: AnimationName 15s ease infinite;
+	background: linear-gradient(249deg, #60d5e5, #6e7e7a, #c38ab8, #de6f7a);
+background-size: 800% 800%;
  }
 .hidetable {
 
