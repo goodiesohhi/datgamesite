@@ -1,4 +1,4 @@
- <ul style="list-style-type:none; background-image: url("./public/background.svg");;">
+ <ul>
 
 <li>  
          <a href="doom-game" onclick="gotogame(this);return false;">DOOM</a>

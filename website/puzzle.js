@@ -1,6 +1,7 @@
 
 window.onload = function () { 
-loadDoc()
+setInterval(function(){loadDoc(); }, 1000);
+
 }
 
 function loadDoc() {
@@ -10,7 +11,7 @@ function loadDoc() {
      document.getElementById("demo").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "games.txt", true);
+  xhttp.open("GET", "puzzle.txt", true);
   xhttp.send();
 }
 
