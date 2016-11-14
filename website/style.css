@@ -45,3 +45,7 @@ background-size: 800% 800%;
 .float {
 	float: left;
 }
+
+.box{
+background-image: url("./public/background.svg");
+}
