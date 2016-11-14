@@ -1,4 +1,7 @@
-window.onload = function () { showGame();}
+window.onload = function () { 
+showGame();
+readGames();
+}
 
 function showGame(whichgame){
   var param = getParameterByName('game');
@@ -21,4 +24,22 @@ function getParameterByName(name, url) {
     if (!results) return null;
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+function readGames(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", "./games.txt", false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                alert(allText);
+            }
+        }
+    }
+    rawFile.send(null);
 }
