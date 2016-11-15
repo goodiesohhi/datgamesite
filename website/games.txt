@@ -43,5 +43,11 @@
  <li>  
          <a href="ssf2" onclick="gotogame(this);return false;">Super Smash Flash 2</a>
 	 </li>
+ <li>  
+         <a href="htgflash" onclick="gotogame(this);return false;">Hate The Game</a>
+	 </li>
+ <li>  
+         <a href="questgrinders.herokuapp.com/" >QuestGrinders</a>
+	 </li>
 	 </ul>
      
