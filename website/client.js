@@ -1,3 +1,4 @@
+
 window.onload = function () { 
 showGame();
 readGames();
@@ -5,13 +6,19 @@ readGames();
 
 function showGame(whichgame){
   var param = getParameterByName('game');
-
+  var hvar = getParameterByName('height');
+  var wvar = getParameterByName('width');
   var source="./games/"+param+".swf";
   
   var game=document.getElementById("gameHolder");
   var clone=game.cloneNode(true);
+
+
   clone.setAttribute('src',source);
   game.parentNode.replaceChild(clone,game)
+ $('clone').attr('width','wvar');
+    $('clone').attr('height','hvar');
+
 }
 
 function getParameterByName(name, url) {

@@ -47,7 +47,7 @@
          <a href="htgflash" onclick="gotogame(this);return false;">Hate The Game</a>
 	 </li>
  <li>  
-         <a href="questgrinders.herokuapp.com/" >QuestGrinders</a>
+         <a href="https://questgrinders.herokuapp.com/" >QuestGrinders</a>
 	 </li>
 	 </ul>
      
