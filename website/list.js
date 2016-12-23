@@ -16,9 +16,9 @@ function loadDoc() {
 
 function gotogame(whichgame){
   var source=whichgame.getAttribute("href");
-    if (source = "htgflash") {
+    if (source === "htgflash") {
   location = "./client.html?game="+source+"&height=642&width=1147";
-   } else
+ } else
 {
  location = "./client.html?game="+source;
 }
